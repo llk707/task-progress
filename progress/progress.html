@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="progress-label text">Progress</div>
+
+  <div id="container-progress">
+    <svg width="120" height="120" viewBox="0 0 120 120">
+      <circle
+        cx="60"
+        cy="60"
+        r="55"
+        stroke="#ddd"
+        stroke-width="10"
+        fill="none"
+      />
+      <path
+        id="progress-path"
+        stroke="#005DFF"
+        stroke-width="10"
+        fill="none"
+        d="M60 5 a 55 55 0 1 1 0 110 a 55 55 0 1 1 0 -110"
+      />
+    </svg>
+  </div>
+
+  <div class="container-bar">
+    <label>
+      <input
+        type="number"
+        id="progress-value"
+        class="value-input"
+        max="100"
+        min="0"
+      /><span class="text">Value</span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" id="animate-toggle" />
+      <span class="slider"></span>
+      <span class="text">Animate</span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" id="hide-toggle" />
+      <span class="slider"></span>
+      <span class="text">Hide</span>
+    </label>
+  </div>
+</div>
