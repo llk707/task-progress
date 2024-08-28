@@ -76,12 +76,3 @@ export function initializeProgressBlock() {
   // Экспорт API
   window.progressAPI = progressAPI;
 }
-
-// // Устанавливаем значение прогресса на 50%
-// window.progressAPI.setValue(50);
-
-// // Включаем анимацию
-// window.progressAPI.setAnimated(true);
-
-// // Показываем блок
-// window.progressAPI.setHidden(false);
