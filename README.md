@@ -37,11 +37,11 @@
 
 - Включите анимацию: 
 
-`document.querySelector('progress-block').setAnimated(true)`
+`document.querySelector('progress-block').setAnimated(true);`
 
 - Скройте блок:
 
-`document.querySelector('progress-block').setHidden(true)`
+`document.querySelector('progress-block').setHidden(true);`
 ## Лицензия
 
 
