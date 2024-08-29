@@ -7,7 +7,62 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <progress-block></progress-block>
+    <div class="container">
+      <div class="progress-label text">Progress</div>
+
+      <progress-block id="progressBlock"></progress-block>
+
+      <div class="container-bar">
+        <label>
+          <input
+            type="number"
+            id="progress-value"
+            class="value-input"
+            max="100"
+            min="0"
+          /><span class="text">Value</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="animate-toggle" />
+          <span class="slider"></span>
+          <span class="text">Animate</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="hide-toggle" />
+          <span class="slider"></span>
+          <span class="text">Hide</span>
+        </label>
+      </div>
+    </div>
     <script type="module" src="./components/ProgressBlock.js"></script>
+    <script>
+      const progressBlock = document.getElementById("progressBlock");
+
+      // Обработчик событий
+      document
+        .getElementById("progress-value")
+        .addEventListener("input", (event) => {
+          let value = parseInt(event.target.value, 10);
+
+          if (isNaN(value)) value = 0;
+          value = Math.max(0, Math.min(value, 100));
+
+          progressBlock.setValue(value);
+
+          event.target.value = value;
+        });
+
+      document
+        .getElementById("animate-toggle")
+        .addEventListener("change", (event) => {
+          progressBlock.setAnimated(event.target.checked);
+        });
+
+      document
+        .getElementById("hide-toggle")
+        .addEventListener("change", (event) => {
+          progressBlock.setHidden(event.target.checked);
+        });
+    </script>
   </body>
 </html>
