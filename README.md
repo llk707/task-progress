@@ -33,15 +33,15 @@
 
 - Устанавите значение прогресса на 42%: 
 
-`window.progressAPI.setValue(42)`
+`document.querySelector('progress-block').setValue(42);`
 
 - Включите анимацию: 
 
-`window.progressAPI.setAnimated(true)`
+`document.querySelector('progress-block').setAnimated(true)`
 
 - Скройте блок:
 
-`window.progressAPI.setHidden(true)`
+`document.querySelector('progress-block').setHidden(true)`
 ## Лицензия
 
 
