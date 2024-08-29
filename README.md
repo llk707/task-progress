@@ -28,21 +28,13 @@
    
 3. Откройте ссылку в вашем браузере для просмотра приложения.
 
-## Пример использования API
+## API методы
 
-Откройте консоль в браузере
+- Устанавите значение метод `setValue(num);`.
 
-- Устанавите значение прогресса на 42%: 
+- Включить анимацию метод `setAnimated(boolean)`.
 
-`document.querySelector('progress-block').setValue(42);`
-
-- Включите анимацию: 
-
-`document.querySelector('progress-block').setAnimated(true);`
-
-- Скройте блок:
-
-`document.querySelector('progress-block').setHidden(true);`
+- Скройте блок метод `setHidden(boolean)`.
 ## Использование компонента
 
 Блок спроектирован так, что его можно легко переиспользовать в других приложениях.
