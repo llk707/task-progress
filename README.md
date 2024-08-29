@@ -42,6 +42,36 @@
 - Скройте блок:
 
 `document.querySelector('progress-block').setHidden(true);`
+## Использование компонента
+
+Блок спроектирован так, что его можно легко переиспользовать в других приложениях.
+
+1. **Использование веб-компонента:**
+   - Для этого скачайте файл `./components/ProgressBlock.js`, и импортируйте его в свой проект.
+
+2. **Подключение скрипта:**
+   - Добавьте следующий скрипт в ваш HTML-файл для подключения JavaScript файла, содержащего код компонента `<progress-block>`:
+     ```html
+     <script type="module" src="./components/ProgressBlock.js"></script>
+     ```
+   - Использование `type="module"` позволяет использовать современные возможности JavaScript, такие как ES-модули.
+
+3. **Пример:**
+    ```html
+    <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <!-- Здесь можно подключить стили, метаданные и другие настройки для страницы -->
+      </head>
+      <body>
+        <!-- Использование веб-компонента -->
+        <progress-block></progress-block>
+    
+        <!-- Подключение модуля с реализацией компонента -->
+        <script type="module" src="./components/ProgressBlock.js"></script>
+      </body>
+    </html>
+    ```
 ## Лицензия
 
 
