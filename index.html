@@ -4,22 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progress block</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="progress/progress-style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div id="progress-block"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        fetch("./progress/progress.html")
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById("progress-block").innerHTML = html;
-            import("./progress/progress-script.js").then((module) =>
-              module.initializeProgressBlock()
-            );
-          });
-      });
-    </script>
+    <progress-block></progress-block>
+    <script type="module" src="./components/ProgressBlock.js"></script>
   </body>
 </html>
